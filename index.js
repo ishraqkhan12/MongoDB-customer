@@ -10,6 +10,9 @@ connectDB();
 // Middleware
 app.use(express.json());
 
+// Enable CORS for all origins
+// app.use(cors()); // This allows requests from any origin
+
 // Example Route
 app.get('/', (req, res) => {
     res.send('MongoDB connected with Express.js');
